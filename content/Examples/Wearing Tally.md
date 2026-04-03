@@ -8,10 +8,11 @@ tags:
   - stitch
   - quantity
 gallery: wearingtally-black.jpg
+artist: Wendy Ward
 ---
 ![Black pilling knit fabric embroidered with colorful French knots](wearingtally-black.jpg)
 
-On Instagram, [Wendy Ward](https://www.instagram.com/thatwendyward/) has been documenting her *Wearing Tally* project, where she embroiders a French knot on her clothing when she wears it. The color corresponds to the season, and she has a special stitch for items she wears on the equinox. The project uses [[color]] and [[quantity]] (and [[stitch]] for differentiating solstice) to represent [[Clothes]] data.
+On Instagram, [Wendy Ward](https://www.instagram.com/thatwendyward/) has been documenting her *Wearing Tally* project, where she uses [[Surface Embroidery]] to make a French knot on her clothing when she wears it. The color corresponds to the season, and she has a special stitch for items she wears on the equinox. The project uses [[color]] and [[quantity]] (and [[stitch]] for differentiating solstice) to represent [[Clothes]] data.
 
 This project is explicitly a form of craftivism, making visible her clothing choices and advocating for more environmentally-sustainable fashion.
 

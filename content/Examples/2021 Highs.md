@@ -8,6 +8,7 @@ tags:
 title: 2021 Highs
 draft: false
 gallery: 2021-highs.jpg
+artist: Jeanette Kalchik
 ---
 ![A cross-stitch of a bookshelf with the books representing the high temperatures for the day](2021-highs.jpg)
 
