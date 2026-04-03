@@ -4,7 +4,7 @@ draft: false
 tags:
   -
 ---
-Sewing is one of the [[Methods]] that involves attaching pieces of fabric to one another using thread, and/or stitching thread onto fabric in different patterns, for mending, reinforcement, and/or decoration. Each of these is different enough in its necessary equipment, its techniques, and traditional designs that we will treat it separately. 
+Sewing is the textile craft that involves attaching pieces of fabric to one another using thread, and/or stitching thread onto fabric in different patterns, for mending, reinforcement, and/or decoration. Each of these is different enough in its necessary equipment, its techniques, and traditional designs that we will treat it separately. 
 
 ## Garment sewing
 
@@ -16,4 +16,4 @@ Sewing is one of the [[Methods]] that involves attaching pieces of fabric to one
 
 ## Embroidery
 
-There are many different traditions of [[Embroidery]], some of which require specific fabrics or types of thread.
+There are many different traditions of [[Textiles/Embroidery/index]], some of which require specific fabrics or types of thread.

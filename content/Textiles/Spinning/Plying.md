@@ -6,7 +6,7 @@ tags:
 ---
 
 
-Typically, yarn is made up of more than one piece of spun fiber. The process of combining individual piece of spun fiber ("singles") by [[Spinning]] them together in the opposite direction they were originally spun is called plying.
+Typically, yarn is made up of more than one piece of spun fiber. The process of combining individual piece of spun fiber ("singles") by [[Textiles/Spinning/index|Spinning]] them together in the opposite direction they were originally spun is called plying.
 
 The process of plying involves making decisions that you can use to encode meaning, as they shape the [[texture]] of the final yarn.
 

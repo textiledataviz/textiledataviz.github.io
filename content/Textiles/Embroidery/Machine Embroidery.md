@@ -5,5 +5,3 @@ tags:
   -
 ---
 
-
-A type of [[Embroidery]].

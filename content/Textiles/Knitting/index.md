@@ -6,7 +6,7 @@ tags:
 ---
 
 
-Knitting is one of the two most common [[Yarn Crafts]], most often used to create garments, whereas [[Crochet]] is more common for accessories, outwear, and stuffed toys. (Read more about [[Knitting vs Crochet]].)
+Knitting is one of the two most common [[Yarn Crafts]], most often used to create garments, whereas [[Textiles/Crochet/index|Crochet]] is more common for accessories, outwear, and stuffed toys. (Read more about [[Knitting vs Crochet]].)
 
 Knitting can also be done by machine, although the tools and process are quite different than hand knitting. See [[Machine Knitting]].
 

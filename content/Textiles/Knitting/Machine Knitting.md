@@ -6,4 +6,4 @@ tags:
 ---
 
 
-A type of [[Knitting]]
+A type of [[Textiles/Knitting/index]]

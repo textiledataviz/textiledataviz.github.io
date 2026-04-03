@@ -12,6 +12,6 @@ tags:
 
 It’s metadata about metadata
 
-[[Embroidery]]
+[[Textiles/Embroidery/index]]
 [[Craft Examples]]
 #incomplete #examples 

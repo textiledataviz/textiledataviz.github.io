@@ -6,7 +6,7 @@ tags:
 ---
 
 
-Quilting is a type of [[Sewing]] that produces some kind of layered, padded item, with (sometimes decorative) stitching holding the layers together. In addition to quilts, common [[Accessories]] can be made using quilting, along with outerwear (e.g. jackets).
+Quilting is a type of [[Textiles/Sewing/index|Sewing]] that produces some kind of layered, padded item, with (sometimes decorative) stitching holding the layers together. In addition to quilts, common [[Accessories]] can be made using quilting, along with outerwear (e.g. jackets).
 
 ## Supplies
 

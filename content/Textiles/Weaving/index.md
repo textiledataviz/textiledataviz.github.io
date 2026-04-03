@@ -2,10 +2,7 @@
 title: Weaving
 draft: false
 tags:
-  - methods
 ---
-
-
 Weaving is a way to turn yarn into a textile that can be either used on its own (e.g. scarves, towels, etc.) or sewn into something else. At the most basic level, you set up *warp threads* (long, usually vertical threads under some tension), and weave the *weft* material over and under the warp threads. How visible the warp or weft are in the final creation depend on the type of weaving.
 
 * **Warp-facing weaving** show the warp threads, but not the weft threads. The design is created through specific combinations of colors in the warp threads, and the patterns of which warp threads are raised and closed. An [[Inkle loom]] is a tool that produces (usually narrow) bands of fabric through warp-facing weaving. You can also use them for [[Card weaving]].
@@ -43,6 +40,3 @@ The more shafts you can bring into play, the more complex designs you can weave,
 A simpler method that involves less planning and calculation is to use [[color]] and/or [[texture]] to map different data values, and weave one pick (row) of weft yarn in that color/texture for each piece of data using plain weave. You can convey additional facets of data with different finger-controlled weaves, like [[Leno]] or [[Danish Medallions]] or [[Spanish Lace]]. Even limiting yourself to plain weave, if you match the data that you're mapping to the warp and weft yarns to color-and-weave patterns, you can end up with a woven design with a fair amount of symmetry (e.g. [[Computers, Archives, and Librarians in Star Trek]]).
 
 Even if you prioritize the data over a pre-planned design, balanced weaving can produce something that ends up looking evocative of canonical patterns, like plaid (see [[2 Year Anniversary]]).
-
-
-[[Methods]]
