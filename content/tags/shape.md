@@ -1,12 +1,10 @@
 ---
-title: Shape
+title: shape
 draft: false
 tags:
   - properties
 ---
-
-
-Shape is one of the [[Properties]] for conveying data values that is shared across textile crafts, along with many other artistic media.
+Shape is one of the [[properties]] for conveying data values that is shared across textile crafts, along with many other artistic media.
 
 Different textile crafts have their own traditions around the kinds of shapes the textile craft tends to use, and how it creates those shapes.
 

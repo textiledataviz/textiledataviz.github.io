@@ -4,14 +4,13 @@ draft: false
 tags:
   -
 ---
-
-
 This site is notes and drafts that may someday become a Handbook of Data Visualization with Textiles.
 
 I have taught a class by that name at Stanford every spring since 2023. It began as a funder mandate: in exchange for internal grant money to pay for student staff and supplies, we were encouraged to offer a hands-on making course. "Intro to Textile Crafts" didn't sound like the kind of thing that Stanford students could easily get past their parents, but I thought "Data Visualization with Textiles" offered good-enough cover for essentially the same thing.
 
 I expected maybe 5 students who wanted a few low-stress credits for messing around in the Textile Makerspace I ran. Instead, without any advertising, I ended up with 19 students who actually wanted to do data visualization using textiles. So that's what we did, and what I've continued doing every year since.
 
+![An excerpt of a data visualization scarf of Star Trek novels with a ladder pattern in blue and black](startrek-scarf-excerpt.jpg)
 ## Why textiles?
 
 *Textiles* and *text* share an etymological root, and these two technologies have a long history of intertwining (e.g. through the stitching techniques used in creating textiles and binding codices.) For much of human history, textile creation was a significant, time-consuming, and visible activity. In our present moment of globalization and fast fashion, most of the textiles we encounter day to day are cheap and treated as disposable -- and the human labor that still goes into them is invisible.
@@ -35,4 +34,4 @@ This handbook aims to expand on *Dear Data* by looking closely at the affordance
 
 ## Where do I begin?
 
-Ultimately, you'll need to engage with both the textile side and the data side. If you already have a textile craft practice of your own that you want to build on, start with [[Data]]. If you feel pretty good about data but textiles seem intimidating, you might want to start off thinking about [[Choosing a Textile Craft]]. The [[Data]] questions might also be able to offer you something if you haven't worked with personal data before, or thought about how you might visualize an arbitrary data set without computer assistance.
+Ultimately, you'll need to engage with both the textile side and the data side. If you already have a textile craft practice of your own that you want to build on, start with [[Data/index|Data]]. If you feel pretty good about data but textiles seem intimidating, you might want to start off thinking about [[Choosing a Textile Craft]]. The [[Data/index|Data]] questions might also be able to offer you something if you haven't worked with personal data before, or thought about how you might visualize an arbitrary data set without computer assistance.

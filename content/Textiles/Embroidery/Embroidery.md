@@ -20,9 +20,9 @@ You can do surface embroidery on any woven fabric; counted-thread embroidery nee
 
 ## Embroidery and Data
 
-Embroidery is well suited to representing all kinds of data. [[Cross-Stitch]] can resemble pixels, making it a good fit for embroidered traditional data visualizations like pie charts and bar charts (see [[Women's Work]]). Because cross-stitch has a predictable number of maximum stitches based on the [[Size]] of your embroidery, you can convert the different values of your data to percentages, map them to different [[Color]] and then cross-stitch any design where the colors work out to the percentages you mapped.
+Embroidery is well suited to representing all kinds of data. [[Cross-Stitch]] can resemble pixels, making it a good fit for embroidered traditional data visualizations like pie charts and bar charts (see [[Women's Work]]). Because cross-stitch has a predictable number of maximum stitches based on the [[size]] of your embroidery, you can convert the different values of your data to percentages, map them to different [[color]] and then cross-stitch any design where the colors work out to the percentages you mapped.
 
-Surface embroidery offers a flexible framework where you can use different [[Stitches]] as a way to convey certain kinds of data, along with [[Color]], [[Shape]], and [[Size]]. Beads can add another facet of data (e.g. see [[Insomnia]]).
+Surface embroidery offers a flexible framework where you can use different [[Stitches]] as a way to convey certain kinds of data, along with [[color]], [[shape]], and [[size]]. Beads can add another facet of data (e.g. see [[Insomnia]]).
 
 
 [[Methods]].

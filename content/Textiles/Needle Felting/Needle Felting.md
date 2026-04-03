@@ -29,4 +29,4 @@ You can find a basic starter kit for around \$20.
 
 Needle felting is similar to drawing or sculpture. You need to use wool for it to felt, so you can't use fiber as a set of parameters for data visualization. Because you compact the fibers so much, you lose much distinction between different types of wool, so that's not a good parameter, either.
 
-By and large, you're working with the same parameters as drawing: [[Shape]], [[Color]], and [[Size]]. For your creation to hold together, it does need to be fairly well felted, but if you gain good control of the technique, you might be able to use squishiness as a property that you can map to data.
+By and large, you're working with the same parameters as drawing: [[shape]], [[color]], and [[size]]. For your creation to hold together, it does need to be fairly well felted, but if you gain good control of the technique, you might be able to use squishiness as a property that you can map to data.

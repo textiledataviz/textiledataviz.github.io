@@ -6,8 +6,7 @@ const explorerSortFn = (a: FileTrieNode, b: FileTrieNode) => {
   const folderOrder: Record<string, number> = {
     Textiles: 0,
     Data: 1,
-    Properties: 2,
-    Examples: 3,
+    Examples: 2,
   }
 
   // Keep folders before files, then apply custom folder ordering.
@@ -31,6 +30,11 @@ const explorerSortFn = (a: FileTrieNode, b: FileTrieNode) => {
     numeric: true,
     sensitivity: "base",
   })
+}
+
+const explorerFilterFn = (node: FileTrieNode) => {
+  const slug = node.slugSegment.toLowerCase()
+  return slug !== "tags" && slug !== "properties"
 }
 
 // components shared across all pages
@@ -70,7 +74,7 @@ export const defaultContentPageLayout: PageLayout = {
         //{ Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({ sortFn: explorerSortFn }),
+    Component.Explorer({ sortFn: explorerSortFn, filterFn: explorerFilterFn }),
   ],
   right: [
     Component.Graph(),
@@ -94,7 +98,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({ sortFn: explorerSortFn }),
+    Component.Explorer({ sortFn: explorerSortFn, filterFn: explorerFilterFn }),
   ],
   right: [],
 }

@@ -12,7 +12,7 @@ Weaving is a way to turn yarn into a textile that can be either used on its own 
 * **Weft-facing weaving** shows the weft, but not the warp. A [[Tapestry loom]] (also known as a frame loom) is used to create weavings with images built up using weft yarn; a piece of recycled cardboard can be used for a simple, free cardboard tapestry loom. You can also set up a [[Floor loom]] to produce a weft-facing weaving.
 * **Balanced weaving** shows both the warp and weft, so it matters what color(s) you use in what pattern as you're setting up the loom. A [[Rigid heddle loom]] can do a balanced weaving, as can a [[Floor loom]] depending on how you set it up.
 
-Weft-facing weaving (tapestry) is arguably the most immediately intuitive if you're trying to weave an image or text, or drawing on [[Shape]] as a way to convey your data. That said, with some practice you can produce shapes and even letters on an [[Inkle loom]] with warp-facing weaving. Inkle looms are inherently limited in what they can produce; if you don't want a relatively narrow strip of fabric, the inkle loom is not the right tool.
+Weft-facing weaving (tapestry) is arguably the most immediately intuitive if you're trying to weave an image or text, or drawing on [[shape]] as a way to convey your data. That said, with some practice you can produce shapes and even letters on an [[Inkle loom]] with warp-facing weaving. Inkle looms are inherently limited in what they can produce; if you don't want a relatively narrow strip of fabric, the inkle loom is not the right tool.
 
 Balanced weaves allow you to create complex designs through the interplay of warp and weft thread colors. You can also use a technique called [[Overshot]] to weave specific shapes, letters, etc. into a weaving pattern that otherwise follows a set pattern.
 ## Supplies
@@ -32,7 +32,7 @@ More resources and tutorials are linked from the pages for individual types of l
 
 ## Weaving and Data
 
-Weaving on a [[Tapestry loom]] gives you a range of tools similar to drawing: you can use [[Shape]] and [[Color]] and [[Size]]. It is perhaps the best-suited type of weaving for rendering typical data visualization styles (e.g. pie charts, bar graphs, etc.)
+Weaving on a [[Tapestry loom]] gives you a range of tools similar to drawing: you can use [[shape]] and [[color]] and [[size]]. It is perhaps the best-suited type of weaving for rendering typical data visualization styles (e.g. pie charts, bar graphs, etc.)
 
 The [[Inkle loom]] offers some interesting challenges for data visualization, especially since changing color would require knotting and tying another yarn in the warp, which is less than ideal for stability or the aesthetics of the final product. I would imagine the use of cards with inkle weaving might get you somewhere, but inkle weaving in general is difficult for me to visualize, so my imagination is struggling. I'm hoping to do some inkle loom experiments as part of the spring 2026 *Data Visualization with Textiles* class and learn things.
 
@@ -40,7 +40,7 @@ You can do a lot of compelling, abstract things with data on a [[Rigid heddle lo
 
 The more shafts you can bring into play, the more complex designs you can weave, which can enable more complex forms of data mapping.
 
-A simpler method that involves less planning and calculation is to use [[Color]] and/or [[Texture]] to map different data values, and weave one pick (row) of weft yarn in that color/texture for each piece of data using plain weave. You can convey additional facets of data with different finger-controlled weaves, like [[Leno]] or [[Danish Medallions]] or [[Spanish Lace]]. Even limiting yourself to plain weave, if you match the data that you're mapping to the warp and weft yarns to color-and-weave patterns, you can end up with a woven design with a fair amount of symmetry (e.g. [[Computers, Archives, and Librarians in Star Trek]]).
+A simpler method that involves less planning and calculation is to use [[color]] and/or [[texture]] to map different data values, and weave one pick (row) of weft yarn in that color/texture for each piece of data using plain weave. You can convey additional facets of data with different finger-controlled weaves, like [[Leno]] or [[Danish Medallions]] or [[Spanish Lace]]. Even limiting yourself to plain weave, if you match the data that you're mapping to the warp and weft yarns to color-and-weave patterns, you can end up with a woven design with a fair amount of symmetry (e.g. [[Computers, Archives, and Librarians in Star Trek]]).
 
 Even if you prioritize the data over a pre-planned design, balanced weaving can produce something that ends up looking evocative of canonical patterns, like plaid (see [[2 Year Anniversary]]).
 

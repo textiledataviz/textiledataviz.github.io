@@ -23,6 +23,6 @@ For crochet, you need crochet hooks of different sizes depending on the yarn you
 
 For purposes of textile data visualization, the tendency for crochet patterns to involve building up (especially garments) from repeats of discrete, smaller pieces makes it more flexible than knitting, where you tend to be limited to counting rows / stitches. For instance, a sweater made up of large and small granny squares (which themselves involve repeats of visually distinct stitch patterns) lets you encode data at the level of the granny square, and/or within each granny square, as if the granny square were a pie chart.
 
-If you're making stuffed toys (especially if you're making more than one), you might be able to use [[Size]] as a way to convey different quantities of data (e.g. a survey with a few respondents vs. many).
+If you're making stuffed toys (especially if you're making more than one), you might be able to use [[size]] as a way to convey different quantities of data (e.g. a survey with a few respondents vs. many).
 
-If you're working with an existing pattern, you can use [[Color]]  and/or [[Quantity]] to represent different data values.
+If you're working with an existing pattern, you can use [[color]]  and/or [[quantity]] to represent different data values.

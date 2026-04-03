@@ -45,7 +45,7 @@ The Woolery has a [relatively accessible guide to choosing a spinning wheel](htt
 
 Spinning offers a lot of potential for conveying data, and the more skill you develop with this craft method, the more options you have for using spinning to represent aspects of your data.
 
-The easiest to start with is [[Color]]. You can spin singles in different colors (e.g. if you map different qualitative data values to different colors, and you have four columns of values), and ply them together to create a 4-ply yarn that represents one or more rows of data that share the same values.
+The easiest to start with is [[color]]. You can spin singles in different colors (e.g. if you map different qualitative data values to different colors, and you have four columns of values), and ply them together to create a 4-ply yarn that represents one or more rows of data that share the same values.
 
 > [!info] Example project
 > In the first *Data Visualization with Textiles* class at Stanford, Connor Yankowitz collaborated with Quinn to spin singles in all the different colors Connor had used to dye their hair over time. They plied the singles together to represent the color combinations Connor made in their hair, with the yarn quantity representing the number of months Connor had their hair that color. The plan was to use a [[Circular knitting machine]] to create a scarf out of the yarn.
@@ -53,4 +53,4 @@ The easiest to start with is [[Color]]. You can spin singles in different colors
 
 [[Plying]] gives you a lot of potential choices that you can map to data. For instance, the number of singles you ply together can vary to represent ranges of values. Once you have more control over spinning, you can also create singles (and resulting plied yarns) of variable thickness that you can use to represent different ranges of quantities. 
 
-There are other spinning techniques that you can use to convey meaning. For instance, you can spin [[Beehives]] or slubs at different intervals to represent some aspect of the data, leveraging yarn [[Texture]].
+There are other spinning techniques that you can use to convey meaning. For instance, you can spin [[Beehives]] or slubs at different intervals to represent some aspect of the data, leveraging yarn [[texture]].

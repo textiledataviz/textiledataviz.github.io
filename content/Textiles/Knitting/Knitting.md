@@ -25,6 +25,6 @@ All you need to get started is one pair of knitting needles and some yarn, and p
 
 ## Data and Knitting
 
-If you're just starting out with knitting, odds are you'll be taking an existing pattern and adapting them with [[Color]] and [[Quantity]] choices that reflect your data. If you feel more bold, you might substitute different knit motifs for standard stockinette stitch in a pattern. If you're knitting an object like a scarf, [[Size]] could come into play, with the overall length reflecting your total amount of data.
+If you're just starting out with knitting, odds are you'll be taking an existing pattern and adapting them with [[color]] and [[quantity]] choices that reflect your data. If you feel more bold, you might substitute different knit motifs for standard stockinette stitch in a pattern. If you're knitting an object like a scarf, [[size]] could come into play, with the overall length reflecting your total amount of data.
 
 [[Yarn Crafts]]
