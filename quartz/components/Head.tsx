@@ -96,6 +96,11 @@ export default (() => {
             return resource
           }
         })}
+        <script
+          defer
+          src="https://webstats.yaffle.xyz/visit.js"
+          data-website-id="c05b3ce1-7e9e-44fe-9f38-d798ee8d4c3f"
+        ></script>
       </head>
     )
   }
