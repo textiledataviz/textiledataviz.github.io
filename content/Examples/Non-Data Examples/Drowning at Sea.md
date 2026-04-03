@@ -3,6 +3,8 @@ title: Drowning at Sea
 draft: false
 tags:
   - embroidery
+gallery: drowning-at-sea.png
+artist: Elena Colón-Marrero
 ---
 ![A surface embroidery of a skeletal hand trying to reach above the waves, with talking mouths above the water, and words for various standards and approaches to getting or storing metadata](drowning-at-sea.png)
 

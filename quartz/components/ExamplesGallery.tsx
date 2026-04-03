@@ -7,8 +7,14 @@ export default (() => {
       return null
     }
 
+    const folderPrefix = fileData.slug.endsWith("/index")
+      ? fileData.slug.slice(0, -"index".length)
+      : `${fileData.slug}/`
+    const indexSlug = `${folderPrefix}index`
+
     const pagesWithGallery = allFiles
-      .filter((page) => page.slug?.startsWith("Examples/") && page.slug !== "Examples/index")
+      .filter((page) => page.slug?.startsWith(folderPrefix))
+      .filter((page) => page.slug !== fileData.slug && page.slug !== indexSlug)
       .filter((page) => typeof page.frontmatter?.gallery === "string")
       .sort((a, b) => {
         const aTitle = a.frontmatter?.title ?? ""
@@ -39,7 +45,7 @@ export default (() => {
     ].sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" }))
 
     return (
-      <section class="examples-gallery-root" aria-label="Examples gallery">
+      <section class="examples-gallery-root" aria-label="Folder gallery">
         <div class="examples-gallery-controls">
           <label>
             Filter by tag:

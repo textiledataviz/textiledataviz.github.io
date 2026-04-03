@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 import style from "../styles/listPage.scss"
+import ExamplesGalleryConstructor from "../ExamplesGallery"
 import { PageList, SortFn } from "../PageList"
 import { Root } from "hast"
 import { htmlToJsx } from "../../util/jsx"
@@ -26,6 +27,7 @@ const defaultOptions: FolderContentOptions = {
 
 export default ((opts?: Partial<FolderContentOptions>) => {
   const options: FolderContentOptions = { ...defaultOptions, ...opts }
+  const ExamplesGallery = ExamplesGalleryConstructor()
 
   const FolderContent: QuartzComponent = (props: QuartzComponentProps) => {
     const { tree, fileData, allFiles, cfg } = props
@@ -101,10 +103,16 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         ? fileData.description
         : htmlToJsx(fileData.filePath!, tree)
     ) as ComponentChildren
+    const showGallery =
+      fileData.slug === "Examples/index" ||
+      fileData.slug === "Examples" ||
+      fileData.slug === "Examples/Non-Data-Examples/index" ||
+      fileData.slug === "Examples/Non-Data-Examples"
 
     return (
       <div class="popover-hint">
         <article class={classes}>{content}</article>
+        {showGallery && <ExamplesGallery {...props} />}
         <div class="page-listing">
           {options.showFolderCount && (
             <p>
@@ -121,6 +129,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     )
   }
 
-  FolderContent.css = concatenateResources(style, PageList.css)
+  FolderContent.css = concatenateResources(style, PageList.css, ExamplesGallery.css)
+  FolderContent.afterDOMLoaded = concatenateResources(ExamplesGallery.afterDOMLoaded)
   return FolderContent
 }) satisfies QuartzComponentConstructor
