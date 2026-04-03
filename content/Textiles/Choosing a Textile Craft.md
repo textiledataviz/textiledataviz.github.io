@@ -1,10 +1,9 @@
 ---
-title: Choosing a Textile Craft
+title: Textiles
 draft: false
 tags:
   -
 ---
-
 What if you're interested in textile data visualization, but you don't know what textile to start with? The best answer is "try a few of them and see what you enjoy". A common problem I see both with students and myself is over-analyzing it. 
 
 You can consult all the guides and resources and comparative charts, and come to a decision about which textile craft to pursue based on all kinds of factors, including what you can make with it, availability/cost of materials, ease of getting started, and speed for producing a final object. But then once you actually put your fingers to crafting that textile, you can discover that it just isn't working for you. You hate doing it. And that's an important discovery and completely fine.
