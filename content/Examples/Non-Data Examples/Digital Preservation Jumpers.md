@@ -2,7 +2,6 @@
 title: Digital Preservation Jumpers
 draft: false
 tags:
-  - examples
   - knitting
 artist: Leontien Talboom
 gallery: digital-preservation-jumper.jpg

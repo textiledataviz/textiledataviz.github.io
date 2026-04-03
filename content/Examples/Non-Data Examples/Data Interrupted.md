@@ -2,7 +2,6 @@
 title: Data Interrupted
 draft: false
 tags:
-  - examples
   - quilting
   - text
 artist: Laura Guertin
