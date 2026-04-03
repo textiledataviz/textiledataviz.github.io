@@ -14,7 +14,7 @@ import fs from "node:fs/promises"
 import { styleText } from "util"
 
 const defaultOptions: SocialImageOptions = {
-  colorScheme: "lightMode",
+  colorScheme: "darkMode",
   width: 1200,
   height: 630,
   imageStructure: defaultImage,
@@ -76,10 +76,13 @@ async function processOgImage(
   const titleSuffix = cfg.pageTitleSuffix ?? ""
   const title =
     (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+  const contentDescription = unescapeHTML(fileData.description?.trim() ?? "")
   const description =
     fileData.frontmatter?.socialDescription ??
+    // Prefer description generated from current page content over frontmatter description.
+    (contentDescription.length > 0 ? contentDescription : undefined) ??
     fileData.frontmatter?.description ??
-    unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
+    i18n(cfg.locale).propertyDefaults.description
 
   const stream = await generateSocialImage(
     {
