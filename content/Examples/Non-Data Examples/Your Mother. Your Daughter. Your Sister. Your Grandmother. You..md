@@ -9,7 +9,7 @@ gallery: mother-daughter-sister-grandmother-you.jpg
 ---
 ![A quilt with squares in various shades of red](mother-daughter-sister-grandmother-you.jpg)
 
-[This quilt](https://www.laurashaw.net/quilt-portfolio/your-mother), started by artist [Laura Shaw](https://www.laurashaw.net/) after the leak of the draft Supreme Court decision to overturn Roe v. Wade, has over 3,000 red squares forming a cross.
+[This quilt](https://www.laurashaw.net/quilt-portfolio/your-mother), started by artist [Laura Shaw](https://www.laurashaw.net/) after the leak of the draft Supreme Court decision to overturn Roe v. Wade, has over 3,000 red squares forming a cross in a [[Quilting|quilt]].
 
 > Viewed up close, each square, made up of red fabrics that cover the full spectrum from purple to orange, solid to patterned, is uniquely shaped, a visual reminder of how each woman must uniquely cope with the unpredictability of having a uterus—from miscarriage to infertility, failed birth control to traumatic birth and delivery—and how all women collectively depend on and benefit from access to safe, legal reproductive care and safe, legal abortion.
 

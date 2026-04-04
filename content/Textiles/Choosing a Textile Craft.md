@@ -1,5 +1,5 @@
 ---
-title: Textiles
+title: Choosing a Textile Craft
 draft: false
 tags:
   -

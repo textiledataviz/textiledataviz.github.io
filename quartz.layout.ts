@@ -103,5 +103,11 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.Explorer({ sortFn: explorerSortFn, filterFn: explorerFilterFn }),
   ],
-  right: [],
+  right: [
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: (page) => !page.fileData.slug?.startsWith("Examples/"),
+    }),
+    Component.Backlinks(),
+  ],
 }
