@@ -7,13 +7,25 @@ export default (() => {
       return null
     }
 
+    const includeSubfolders = fileData.frontmatter?.galleryIncludeSubfolders !== false
     const folderPrefix = fileData.slug.endsWith("/index")
       ? fileData.slug.slice(0, -"index".length)
       : `${fileData.slug}/`
     const indexSlug = `${folderPrefix}index`
 
     const pagesWithGallery = allFiles
-      .filter((page) => page.slug?.startsWith(folderPrefix))
+      .filter((page) => {
+        if (!page.slug?.startsWith(folderPrefix)) {
+          return false
+        }
+
+        if (includeSubfolders) {
+          return true
+        }
+
+        const relativeSlug = page.slug.slice(folderPrefix.length)
+        return !relativeSlug.includes("/")
+      })
       .filter((page) => page.slug !== fileData.slug && page.slug !== indexSlug)
       .filter((page) => typeof page.frontmatter?.gallery === "string")
       .sort((a, b) => {
