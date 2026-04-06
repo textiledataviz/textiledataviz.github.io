@@ -1,7 +1,8 @@
 import { QuartzEmitterPlugin } from "../types"
 import { i18n } from "../../i18n"
 import { unescapeHTML } from "../../util/escape"
-import { FullSlug, getFileExtension, isAbsoluteURL, joinSegments, QUARTZ } from "../../util/path"
+import { FullSlug, getFileExtension, isAbsoluteURL } from "../../util/path"
+import path from "path"
 import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "../../util/og"
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
@@ -26,11 +27,11 @@ const defaultOptions: SocialImageOptions = {
  * @param opts options for generating image
  */
 async function generateSocialImage(
-  { cfg, description, fonts, title, fileData }: ImageOptions,
+  { cfg, description, fonts, title, fileData, contentImageBase64 }: ImageOptions,
   userOpts: SocialImageOptions,
 ): Promise<Readable> {
   const { width, height } = userOpts
-  const iconPath = joinSegments(QUARTZ, "static", "icon.png")
+  const iconPath = "noun-weave.png"
   let iconBase64: string | undefined = undefined
   try {
     const iconData = await fs.readFile(iconPath)
@@ -47,6 +48,7 @@ async function generateSocialImage(
     fonts,
     fileData,
     iconBase64,
+    contentImageBase64,
   })
 
   const svg = await satori(imageComponent, {
@@ -84,6 +86,35 @@ async function processOgImage(
     fileData.frontmatter?.description ??
     i18n(cfg.locale).propertyDefaults.description
 
+  // Extract first image from the first 3 paragraphs of the page
+  let contentImageBase64: string | undefined = undefined
+  if (fileData.filePath && fileData.text) {
+    const paragraphs = fileData.text.split(/\n\n+/).slice(0, 3)
+    const imageMatch = paragraphs.join("\n\n").match(/!\[[^\]]*\]\(([^)]+)\)/)
+    if (imageMatch) {
+      const imageSrc = imageMatch[1]
+      try {
+        if (imageSrc.startsWith("http://") || imageSrc.startsWith("https://")) {
+          const resp = await fetch(imageSrc)
+          if (resp.ok) {
+            const buf = Buffer.from(await resp.arrayBuffer())
+            const ext = (imageSrc.split(".").pop()?.split("?")[0] ?? "jpeg").toLowerCase()
+            const mime = ext === "jpg" ? "jpeg" : ext
+            contentImageBase64 = `data:image/${mime};base64,${buf.toString("base64")}`
+          }
+        } else {
+          const imgPath = path.join(path.dirname(fileData.filePath), imageSrc)
+          const imgData = await fs.readFile(imgPath)
+          const ext = path.extname(imageSrc).slice(1).toLowerCase() || "jpeg"
+          const mime = ext === "jpg" ? "jpeg" : ext
+          contentImageBase64 = `data:image/${mime};base64,${imgData.toString("base64")}`
+        }
+      } catch {
+        // image not found or failed to load, skip
+      }
+    }
+  }
+
   const stream = await generateSocialImage(
     {
       title,
@@ -91,6 +122,7 @@ async function processOgImage(
       fonts,
       cfg,
       fileData,
+      contentImageBase64,
     },
     fullOptions,
   )
