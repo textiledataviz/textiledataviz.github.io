@@ -5,6 +5,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { JSXInternal } from "preact/src/jsx"
 import { FontSpecification, getFontSpecificationName, ThemeKey } from "./theme"
 import path from "path"
+import { QUARTZ } from "./path"
 import { styleText } from "util"
 
 const defaultHeaderWeight = [700]
