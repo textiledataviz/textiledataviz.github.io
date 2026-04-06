@@ -105,26 +105,44 @@ export default (() => {
   }
 
   ExamplesGallery.afterDOMLoaded = `
+function applyGalleryFilter(root, tag) {
+  const cards = root.querySelectorAll(".examples-gallery-card")
+  for (const card of cards) {
+    const tags = (card.getAttribute("data-tags") || "")
+      .split("|")
+      .filter((t) => t.length > 0)
+    const visible = tag === "all" || tags.includes(tag)
+    card.classList.toggle("is-hidden", !visible)
+  }
+}
+
 function setupExamplesGalleryFilter() {
   const roots = document.querySelectorAll(".examples-gallery-root")
   for (const root of roots) {
     const filter = root.querySelector(".examples-gallery-filter")
-    const cards = root.querySelectorAll(".examples-gallery-card")
     if (!filter) continue
 
-    const updateVisibility = () => {
-      const selected = filter.value
-      for (const card of cards) {
-        const tags = (card.getAttribute("data-tags") || "")
-          .split("|")
-          .filter((tag) => tag.length > 0)
-        const visible = selected === "all" || tags.includes(selected)
-        card.classList.toggle("is-hidden", !visible)
-      }
-    }
+    // Initialise from the current URL hash (#tag=...)
+    const params = new URLSearchParams(window.location.hash.slice(1))
+    const initial = params.get("tag") ?? "all"
+    const validValues = Array.from(filter.options).map((o) => o.value)
+    filter.value = validValues.includes(initial) ? initial : "all"
+    applyGalleryFilter(root, filter.value)
 
-    filter.addEventListener("change", updateVisibility)
-    updateVisibility()
+    filter.addEventListener("change", () => {
+      const selected = filter.value
+      applyGalleryFilter(root, selected)
+
+      // Update the URL hash without pushing a new history entry
+      const next = new URLSearchParams(window.location.hash.slice(1))
+      if (selected === "all") {
+        next.delete("tag")
+      } else {
+        next.set("tag", selected)
+      }
+      const newHash = next.toString() ? "#" + next.toString() : window.location.pathname
+      history.replaceState(null, "", newHash || window.location.pathname)
+    })
   }
 }
 
