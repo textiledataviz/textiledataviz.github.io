@@ -169,6 +169,10 @@ export type ImageOptions = {
    * base64-encoded first content image found in the first 3 paragraphs of the page
    */
   contentImageBase64?: string
+  /**
+   * whether the image panel is using the fallback background image
+   */
+  contentImageIsFallback?: boolean
 }
 
 // This is the default template for generated social image.
@@ -180,6 +184,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
   fileData,
   iconBase64,
   contentImageBase64,
+  contentImageIsFallback,
 }) => {
   const { colorScheme } = userOpts
   const fontBreakPoint = 32
@@ -330,6 +335,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         <div
           style={{
             display: "flex",
+            position: "relative",
             width: 420,
             flexShrink: 0,
             height: "100%",
@@ -344,6 +350,15 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
               objectFit: "cover",
             }}
           />
+          {contentImageIsFallback && (
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                  backgroundColor: "rgba(0, 0, 0, 0.75)",
+              }}
+            />
+          )}
         </div>
       )}
     </div>

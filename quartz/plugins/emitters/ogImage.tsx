@@ -23,12 +23,59 @@ const defaultOptions: SocialImageOptions = {
   excludeRoot: false,
 }
 
+function getImageMimeType(filePath: string) {
+  const ext = path.extname(filePath).slice(1).toLowerCase() || "jpeg"
+  if (ext === "jpg") {
+    return "jpeg"
+  }
+  if (ext === "svg") {
+    return "svg+xml"
+  }
+  return ext
+}
+
+function getBackgroundImageForSlug(slug: string) {
+  if (slug === "Data" || slug.startsWith("Data/")) {
+    return "noun-data.svg"
+  }
+
+  if (slug === "Properties" || slug.startsWith("Properties/")) {
+    return "noun-properties.svg"
+  }
+
+  if (slug === "Textiles/Sewing" || slug.startsWith("Textiles/Sewing/")) {
+    return "noun-sewing.svg"
+  }
+
+  if (slug === "Textiles/Crochet" || slug.startsWith("Textiles/Crochet/")) {
+    return "noun-crochet.svg"
+  }
+
+  if (slug === "Textiles/Embroidery" || slug.startsWith("Textiles/Embroidery/")) {
+    return "noun-embroidery.svg"
+  }
+
+  if (slug === "Textiles/Knitting" || slug.startsWith("Textiles/Knitting/")) {
+    return "noun-knitting.svg"
+  }
+
+  if (slug === "Textiles/Needle-Felting" || slug.startsWith("Textiles/Needle-Felting/")) {
+    return "noun-needle-felting.svg"
+  }
+
+  if (slug === "Textiles/Spinning" || slug.startsWith("Textiles/Spinning/")) {
+    return "noun-spinning.svg"
+  }
+
+  return "noun-weave.svg"
+}
+
 /**
  * Generates social image (OG/twitter standard) and saves it as `.webp` inside the public folder
  * @param opts options for generating image
  */
 async function generateSocialImage(
-  { cfg, description, fonts, title, fileData, contentImageBase64 }: ImageOptions,
+  { cfg, description, fonts, title, fileData, contentImageBase64, contentImageIsFallback }: ImageOptions,
   userOpts: SocialImageOptions,
 ): Promise<Readable> {
   const { width, height } = userOpts
@@ -50,6 +97,7 @@ async function generateSocialImage(
     fileData,
     iconBase64,
     contentImageBase64,
+    contentImageIsFallback,
   })
 
   const svg = await satori(imageComponent, {
@@ -87,41 +135,60 @@ async function processOgImage(
     fileData.frontmatter?.description ??
     i18n(cfg.locale).propertyDefaults.description
 
-  // Extract first image from the first 3 paragraphs of the page
+  // Extract first image from the first 3 paragraphs of the raw markdown source
   let contentImageBase64: string | undefined = undefined
-  if (fileData.filePath && fileData.text) {
-    const paragraphs = fileData.text.split(/\n\n+/).slice(0, 3)
-    const imageMatch = paragraphs.join("\n\n").match(/!\[[^\]]*\]\(([^)]+)\)/)
-    if (imageMatch) {
-      const imageSrc = imageMatch[1]
-      try {
-        if (imageSrc.startsWith("http://") || imageSrc.startsWith("https://")) {
-          const resp = await fetch(imageSrc)
-          if (resp.ok) {
-            const buf = Buffer.from(await resp.arrayBuffer())
-            const ext = (imageSrc.split(".").pop()?.split("?")[0] ?? "jpeg").toLowerCase()
-            const mime = ext === "jpg" ? "jpeg" : ext
-            contentImageBase64 = `data:image/${mime};base64,${buf.toString("base64")}`
+  let contentImageIsFallback = false
+  if (fileData.filePath) {
+    try {
+      const rawMd = await fs.readFile(fileData.filePath, "utf-8")
+      // Strip frontmatter block before searching
+      const body = rawMd.replace(/^---[\s\S]*?---\s*/, "")
+      const paragraphs = body.split(/\n\n+/).slice(0, 3)
+      const imageMatch = paragraphs.join("\n\n").match(/!\[[^\]]*\]\(([^)]+)\)/)
+      if (imageMatch) {
+        const imageSrc = imageMatch[1]
+        try {
+          if (imageSrc.startsWith("http://") || imageSrc.startsWith("https://")) {
+            const resp = await fetch(imageSrc)
+            if (resp.ok) {
+              const buf = Buffer.from(await resp.arrayBuffer())
+              const mime = getImageMimeType(imageSrc)
+              contentImageBase64 = `data:image/${mime};base64,${buf.toString("base64")}`
+            }
+          } else {
+            // First try path relative to the source file's directory
+            let imgPath = path.join(path.dirname(fileData.filePath), imageSrc)
+            try {
+              await fs.access(imgPath)
+            } catch {
+              // Fall back to shortest-path resolution: search recursively under content root
+              const filename = path.basename(imageSrc)
+              const matches = await glob(`**/${filename}`, ctx.argv.directory, [])
+              imgPath = matches.length > 0 ? path.join(ctx.argv.directory, matches[0]) : imgPath
+            }
+            const imgData = await fs.readFile(imgPath)
+            const mime = getImageMimeType(imageSrc)
+            contentImageBase64 = `data:image/${mime};base64,${imgData.toString("base64")}`
           }
-        } else {
-          // First try path relative to the source file's directory
-          let imgPath = path.join(path.dirname(fileData.filePath), imageSrc)
-          try {
-            await fs.access(imgPath)
-          } catch {
-            // Fall back to shortest-path resolution: search recursively under content root
-            const filename = path.basename(imageSrc)
-            const matches = await glob(`**/${filename}`, ctx.argv.directory, [])
-            imgPath = matches.length > 0 ? path.join(ctx.argv.directory, matches[0]) : imgPath
-          }
-          const imgData = await fs.readFile(imgPath)
-          const ext = path.extname(imageSrc).slice(1).toLowerCase() || "jpeg"
-          const mime = ext === "jpg" ? "jpeg" : ext
-          contentImageBase64 = `data:image/${mime};base64,${imgData.toString("base64")}`
+        } catch {
+          // image not found or failed to load, skip
         }
-      } catch {
-        // image not found or failed to load, skip
       }
+    } catch {
+      // raw file read failed, skip
+    }
+  }
+
+  if (!contentImageBase64) {
+    try {
+      const bgImage = getBackgroundImageForSlug(slug)
+      const bgPath = path.join("quartz", "static", bgImage)
+      const bgData = await fs.readFile(bgPath)
+      const mime = getImageMimeType(bgPath)
+      contentImageBase64 = `data:image/${mime};base64,${bgData.toString("base64")}`
+      contentImageIsFallback = true
+    } catch {
+      // fallback background image not found, keep panel hidden
     }
   }
 
@@ -133,6 +200,7 @@ async function processOgImage(
       cfg,
       fileData,
       contentImageBase64,
+      contentImageIsFallback,
     },
     fullOptions,
   )
