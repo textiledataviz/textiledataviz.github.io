@@ -13,6 +13,7 @@ import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
 import { styleText } from "util"
+import { glob } from "../../util/glob"
 
 const defaultOptions: SocialImageOptions = {
   colorScheme: "darkMode",
@@ -103,7 +104,16 @@ async function processOgImage(
             contentImageBase64 = `data:image/${mime};base64,${buf.toString("base64")}`
           }
         } else {
-          const imgPath = path.join(path.dirname(fileData.filePath), imageSrc)
+          // First try path relative to the source file's directory
+          let imgPath = path.join(path.dirname(fileData.filePath), imageSrc)
+          try {
+            await fs.access(imgPath)
+          } catch {
+            // Fall back to shortest-path resolution: search recursively under content root
+            const filename = path.basename(imageSrc)
+            const matches = await glob(`**/${filename}`, ctx.argv.directory, [])
+            imgPath = matches.length > 0 ? path.join(ctx.argv.directory, matches[0]) : imgPath
+          }
           const imgData = await fs.readFile(imgPath)
           const ext = path.extname(imageSrc).slice(1).toLowerCase() || "jpeg"
           const mime = ext === "jpg" ? "jpeg" : ext

@@ -2,7 +2,6 @@
 title: Data Visualization with Textiles
 draft: false
 tags:
-  -
 ---
 ![An excerpt of a data visualization scarf of Star Trek novels with a ladder pattern in blue and black](startrek-scarf-excerpt.jpg)
 
