@@ -13,7 +13,7 @@ gallery: disclosures-dress.jpg
 ---
 ![Three panels showing the construction of the dress and final creation](disclosures-dress.jpg)
 
-For her final project in *Data Visualization with Textiles* 2024, Aldis Elfarsdottir used multiple data sources (including [[Civic Data]]) to sew a dress with machine-embroidered visualizations. This dress partially recreates computer-generated visualizations, but also uses the property of size to represent some of the data.
+For her final project in *Data Visualization with Textiles* 2024, Aldis Elfarsdottir used multiple data sources (including [[Civic Data]]) to sew a dress with [[Machine Embroidery|machine embroidered]] visualizations. This dress partially recreates computer-generated visualizations, but also uses the property of size to represent some of the data.
 
 > Over the past two years of my PhD, I have merged and analyzed three large datasets: the Carbon Disclosure Project 2010-2020 (CDP), the Environmental Protection Agency’s Toxic Release Inventory 2010-2022 (TRI), and Morgan Stanley Capital International ESG Scores for rating companies by their performance on Environmental Social and Governance criteria between 2013-2021 (ESG). I meticulously matched over 4,000 companies by name across these datasets to find out when and why they disclose their carbon emissions and sustainability initiatives; and how their ESG scores are impacted by voluntary and mandatory disclosures. Carbon Disclosure Project CDP is voluntary, while Toxic Release Inventory TRI is mandatory.
 > 

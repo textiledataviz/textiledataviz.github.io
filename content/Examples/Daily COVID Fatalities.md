@@ -11,7 +11,7 @@ gallery: daily-covid-fatalities.jpg
 ---
 ![A scarf made up of hexagon pin loom weavings in different colors](daily-covid-fatalities.jpg)
 
-[Kristin Briney](http://kbriney.com/) used a [[Pin Loom]] to weave hexagons of data for each day of 2020 showing daily COVID fatality data in the United States ([[Civic Data]]). This piece uses color as well as chronological data organization.
+[Kristin Briney](http://kbriney.com/) used a [[Pin loom]] to [[Textiles/Weaving/index|weave]] hexagons of data for each day of 2020 showing daily COVID fatality data in the United States ([[Civic Data]]). This piece uses color as well as chronological data organization.
 
 - white = 0 U.S. COVID deaths
 - light pink = 1-9 U.S. COVID deaths

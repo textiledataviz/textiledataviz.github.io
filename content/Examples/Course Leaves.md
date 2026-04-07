@@ -10,7 +10,8 @@ artist: Nancy Hoang
 gallery: course-leaves.jpg
 ---
 ![Close-up of embroidered leaves](course-leaves.jpg)
-For a final project in *Data Visualization with Textiles* 2024, Nancy Hoang embroidered leaves on a dress, using [[Class Data]] and the property of size.
+
+For a final project in *Data Visualization with Textiles* 2024, Nancy Hoang [[Surface Embroidery|embroidered]] leaves on a dress, using [[Class Data]] and the property of size.
 
 >For my final project, I made a dress that doubles as a timeline of my years at Stanford, using embroidery to visually represent my academic load over time. The data came from my own course history, where each millimeter of embroidery represents one unit, translating the number of units I took each year into physical lengths on the dress. 
 >

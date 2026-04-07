@@ -12,7 +12,7 @@ artist: Symantha Hom
 gallery: outcomes-foster-care.jpg
 ---
 ![An embroidered house with a bead in the center](outcomes-foster-care.jpg)
-For her final project for *Data Visualization with Textiles* 2025, Symantha Hom did an embroidery using [[Civic Data]], using the properties of color, organization, and stitch.
+For her final project for *Data Visualization with Textiles* 2025, Symantha Hom did an [[Surface Embroidery|embroidery]] using [[Civic Data]], using the properties of color, organization, and stitch.
 
 >For my final textile project, I created a stitched house to represent national foster care outcomes in the United States, using data from the Adoption and Foster Care Analysis and Reporting System (AFCARS, 2023). This dataset outlines the paths children take after leaving foster care. Whether they are reunified with their families, adopted, placed in guardianship, age out of the system, or exit through less defined channels. Rather than translating this data into a chart or graph, I chose a house as the central image for the piece–a universal symbol of safety, and belonging. For many children in foster care, a stable home remains out of reach, and I wanted to explore this tension visually. My goal was to create a piece that reflects not just the
 numbers, but the emotional weight behind them.

@@ -11,7 +11,7 @@ gallery: climate-skirt.jpg
 ---
 ![A black skirt with varying lengths](climate-skirt.jpg)
 
-For a final project in *Data Visualization with Textiles* 2024, Adaeze Chukwuka sewed a skirt using [[Temperature Data]] from 1951-1980 and the property of size:
+For a final project in *Data Visualization with Textiles* 2024, Adaeze Chukwuka [[Garment Sewing|sewed]] a skirt using [[Temperature Data]] from 1951-1980 and the property of size:
 
 >For my project, I knew that I wanted to do something environmental, so I looked for relatively simple climate-related data. I stumbled across an interactive [radial data visualization](https://public.tableau.com/app/profile/gorazd3711/viz/Globalwarming_IsitaHoax/Globalwarming_IsitaHoax) from 2021 on climate change that used distance from the baseline of 1951-1980 temperature mean to determine how “off” the temperature was. I found it through a twitter Tableau community that I am a part of. For simplicity’s sake, I pared down the data and only used data points from every 10 years. I thought that if I included too many data points, besides being a lot more work for me, the jumps would make the skirt look too disheveled. In Google Sheets, I first ran through every step of the visualization to record the year and the corresponding temperature difference. (Looking back, I probably could’ve just made a copy of the visualization and downloaded the data.) Then, I ran a filter through the data to scale it to centimeters for my skirt (by multiplying the absolute value of the temperature difference by 54.9019608). I learned some basic Google sheets through this process, but I do think most of it was in my wheelhouse. 
 

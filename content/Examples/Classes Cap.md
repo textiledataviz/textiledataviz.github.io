@@ -12,7 +12,8 @@ artist: Ryan Guan
 gallery: classes-cap.jpg
 ---
 ![Multiple images of a hand-embroidered cap with flowers](classes-cap.jpg)
-For a final project in *Data Visualization with Textiles* 2024, Ryan Guan used [[Class Data]], and the properties of quantity, stitch, and color to do an embroidery of five years at Stanford.
+
+For a final project in *Data Visualization with Textiles* 2024, Ryan Guan used [[Class Data]], and the properties of quantity, stitch, and color to do an [[Surface Embroidery|embroidery]] of five years at Stanford.
 
 >My project depicts my past five years at Stanford. Each flower bunch represents one year, and the flowers represent the courses I took that year, categorized by whether they were a requirement or an elective. Spring 2024 is my last quarter at Stanford, so course selection and my academic journey over time have been on my mind.
 >

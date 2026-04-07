@@ -15,7 +15,7 @@ gallery: labday-2024.jpg
 
 Lab Day is an annual event of the [Stanford Literary Lab](https://litlab.stanford.edu/) featuring lightning talks, lunch, cake, and libations. 
 
-For Lab Day 2024, I kept track of a number of key words as they occurred in the presentations (stem stitch) and comments (chain stitch) for each lightning talk ([[Event Data]]). The colors representing each talk are based on the [[Clothes]] or slides of the presenter. Beads represent the number of uses of the key terms.
+For Lab Day 2024, I kept track of a number of key words as they occurred in the presentations (stem stitch) and comments (chain stitch) for each lightning talk ([[Event Data]]). The colors representing each talk are based on the [[Clothes]] or slides of the presenter. Beads represent the number of uses of the key terms. This is a [[Surface Embroidery]] piece.
 
 The first embroidery covers the morning up to lunch; the second starts with lunch and the colors of the foods, libations, and cake, using chain stitch because lunch is a time for discussion.
 

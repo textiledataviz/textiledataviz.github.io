@@ -11,7 +11,8 @@ artist: Patrick Vasquez
 gallery: visiting-shirt.jpg
 ---
 ![A pink shirt with different colored buttons](visiting-shirt.jpg)
-For his final project for *Data Visualization with Textiles* 2024, Patrick Vasquez sewed a shirt using [[Interactions|interaction data]] and the properties of color and quantity.
+
+For his final project for *Data Visualization with Textiles* 2024, Patrick Vasquez [[Garment Sewing|sewed]] a shirt using [[Interactions|interaction data]] and the properties of color and quantity.
 
 > Data has been the hardest part of this class by far, much more than learning the skills
 necessary to work in the textile makerspace. Thus for the data that I used for this project, I kept it simple. I was inspired by the data set I had provided for the mid quarter assignment. The data I

@@ -12,7 +12,7 @@ gallery: topology-2.jpg
 ---
 ![A knitted piece with complex topology created through different stitches](topology-1.jpg)
 
-A student in a past *Data Visualization with Textiles* class asked for their project to be included in the gallery anonymously. They knitted a visualization with a complex topology to visualize their experience with rapid-cycling bipolar disorder.
+A student in a past *Data Visualization with Textiles* class asked for their project to be included in the gallery anonymously. They [[Textiles/Knitting/index|knitted]] a visualization with a complex topology to visualize their experience with rapid-cycling bipolar disorder ([[Data/Created Data/Personal Data/index|Personal Data]]).
 
 ![Various views of the knitting with close-ups of different parts](topology-2.jpg)
 !['Unfolding' the bipolar experience](topology-3.jpg)

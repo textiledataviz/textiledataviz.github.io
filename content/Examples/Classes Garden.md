@@ -11,7 +11,7 @@ gallery: classes-garden.jpg
 ---
 ![Machine embroidery of flowers of different colors and sizes](classes-garden.jpg)
 
-For a final project in *Data Visualization with Textiles* 2024, Tanvi Deshpande used [[Class Data]] to embroider flowers representing the departments she took classes in.
+For a final project in *Data Visualization with Textiles* 2024, Tanvi Deshpande used [[Class Data]] to [[Machine Embroidery|embroider]] flowers representing the departments she took classes in.
 
 > My embroidery project was based on the unit counts of classes I’ve taken in various departments during my six quarters at Stanford. Initially, I intended on embroidering a bundle of flowers for each quarter onto a tote bag, where a flower’s color represented the department a class was in and its size corresponded to the number of units it was. However, since I have taken classes in 14 different departments, this design quickly became more complicated than I could handle.
 > 
