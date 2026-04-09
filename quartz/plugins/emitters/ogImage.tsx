@@ -71,7 +71,7 @@ function getBackgroundImageForSlug(slug: string) {
 }
 
 /**
- * Generates social image (OG/twitter standard) and saves it as `.webp` inside the public folder
+ * Generates social image (OG/twitter standard) and saves it as `.png` inside the public folder
  * @param opts options for generating image
  */
 async function generateSocialImage(
@@ -113,7 +113,7 @@ async function generateSocialImage(
     },
   })
 
-  return sharp(Buffer.from(svg)).webp({ quality: 40 })
+  return sharp(Buffer.from(svg)).png({ compressionLevel: 9 })
 }
 
 async function processOgImage(
@@ -209,7 +209,7 @@ async function processOgImage(
     ctx,
     content: stream,
     slug: `${slug}-og-image` as FullSlug,
-    ext: ".webp",
+    ext: ".png",
   })
 }
 
@@ -267,7 +267,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
             }
 
             const generatedOgImagePath = isRealFile
-              ? `https://${baseUrl}/${pageData.slug!}-og-image.webp`
+              ? `https://${baseUrl}/${pageData.slug!}-og-image.png`
               : undefined
             const defaultOgImagePath = `https://${baseUrl}/static/noun-weave.png`
             const ogImagePath = userDefinedOgImagePath ?? generatedOgImagePath ?? defaultOgImagePath
