@@ -283,6 +283,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
 
                 <meta property="og:image" content={ogImagePath} />
                 <meta property="og:image:url" content={ogImagePath} />
+                <meta property="og:image:secure_url" content={ogImagePath} />
                 <meta name="twitter:image" content={ogImagePath} />
                 <meta property="og:image:type" content={ogImageMimeType} />
               </>
