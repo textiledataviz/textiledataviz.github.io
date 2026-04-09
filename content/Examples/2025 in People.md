@@ -9,6 +9,9 @@ tags:
   - organization
 artist: Quinn Dombrowski
 gallery: 2025-people.jpg
+socialImage: https://textiledataviz.org/assets/examples/2025-people.jpg
+aliases:
+  - /Examples/2025-in-People/index
 ---
 ![A spiral embroidery with assorted colors and stitches](2025-people.jpg)
 
