@@ -24,7 +24,8 @@ const defaultOptions: SocialImageOptions = {
 }
 
 function getImageMimeType(filePath: string) {
-  const ext = path.extname(filePath).slice(1).toLowerCase() || "jpeg"
+  const normalizedPath = filePath.split("#")[0].split("?")[0]
+  const ext = path.extname(normalizedPath).slice(1).toLowerCase() || "jpeg"
   if (ext === "jpg") {
     return "jpeg"
   }
@@ -271,7 +272,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
               : undefined
             const defaultOgImagePath = `https://${baseUrl}/static/noun-weave.png`
             const ogImagePath = userDefinedOgImagePath ?? generatedOgImagePath ?? defaultOgImagePath
-            const ogImageMimeType = `image/${getFileExtension(ogImagePath)?.slice(1) ?? "png"}`
+            const ogImageMimeType = `image/${getImageMimeType(ogImagePath)}`
             return (
               <>
                 {!userDefinedOgImagePath && (
