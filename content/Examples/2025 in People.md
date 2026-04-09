@@ -10,6 +10,7 @@ tags:
 artist: Quinn Dombrowski
 gallery: 2025-people.jpg
 socialImage: https://textiledataviz.org/assets/examples/2025-people.jpg
+socialUrl: https://textiledataviz.org/Examples/2025-in-People.html
 aliases:
   - /Examples/2025-in-People/index
 ---

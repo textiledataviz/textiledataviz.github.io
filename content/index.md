@@ -2,6 +2,8 @@
 title: Data Visualization with Textiles
 draft: false
 tags:
+socialImage: https://textiledataviz.org/assets/img/startrek-scarf-excerpt.jpg
+socialUrl: https://textiledataviz.org/index.html
 ---
 ![An excerpt of a data visualization scarf of Star Trek novels with a ladder pattern in blue and black](startrek-scarf-excerpt.jpg)
 

@@ -1,5 +1,5 @@
 import { i18n } from "../i18n"
-import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path"
+import { FullSlug, getFileExtension, isAbsoluteURL, joinSegments, pathToRoot } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -29,12 +29,21 @@ export default (() => {
 
     // URL of current page. Normalize index pages to site root to avoid /index variants.
     const isRootIndex = fileData.slug === "index"
-    const socialUrl =
+    let socialUrl =
       fileData.slug === "404"
         ? url.toString()
         : isRootIndex
           ? url.toString()
           : joinSegments(url.toString(), fileData.slug!)
+
+    // Optional per-page override for social/canonical URL.
+    const socialUrlOverride = fileData.frontmatter?.socialUrl
+    if (typeof socialUrlOverride === "string" && socialUrlOverride.length > 0) {
+      socialUrl = isAbsoluteURL(socialUrlOverride)
+        ? socialUrlOverride
+        : joinSegments(url.toString(), socialUrlOverride)
+    }
+
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
       (e) => e.name === CustomOgImagesEmitterName,
     )
