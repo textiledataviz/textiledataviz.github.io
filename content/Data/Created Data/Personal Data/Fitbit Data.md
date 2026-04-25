@@ -1,0 +1,32 @@
+Fitbits, Apple Watches, and other wearables gather (what is presented as objective) data automatically. You don't need a device like this in order to do something like sleep tracking (e.g. Pam Lach's [[Sleep Viz]] doesn't use it), but these devices at least *seem* to make a quantified self data visualization easier and less subjective.
+
+## Choosing your data subset
+
+Wearables gather *a lot of data*, including things that probably aren't all that interesting or motivating to you. If you have a wearable for step counting, and aren't particularly troubled by poor sleep, the sleep data might not be relevant. If you're using it to monitor how poorly you sleep, the exercise stats may not be interesting. You probably want data that includes some kind of variation: it won't be all that interesting to create a visualization showing that you consistently walk about 10,000 steps during the week and 20,000 steps on weekends. 
+
+In general, I'd be reluctant to do things with any of the "scores" that are produced through black-box algorithms on the vendor side. Things like Fitbit's "Daily readiness" or "Stress management score" are opaque and combine several different things -- they're not data, so much as an analysis whose process isn't transparent to you. It's better to work with data that's less processed (e.g. resting heart rate) or something you can see the data for (e.g. heart rate range).
+
+### Data visualization is an argument
+
+When picking a subset of data for visualization, keep in mind that *data visualization is an argument*. Don't just grab two types of data because they're easy to access; whether or not you're doing it deliberately, juxtaposing two types of data in a visualization suggests some connection between them. For instance, if you do a visualization with both step count and sleep data, that choice suggests that you think your sleep quality is meaningfully connected to how many steps you're getting in.
+
+Similarly, think hard before using data that is more specific and granular than it is meaningful for you. Fitbit data breaks down sleep data into "Awake", "REM", "Light", and "Deep". But if you're doing a creative textile visualization of your experience with sleep rather than simply a representation of medical data, it's worth asking yourself whether and how that data is connected to your experience. Do you feel like there's an association between those different values and how tired you are in the morning, or how well-rested you feel during the day? Maybe something simpler like bedtime and/or wake-up time(s) is more meaningful data.
+
+## How do you get the data?
+
+Depending on what data you've decided to use, you may just decide to create your own spreadsheet from scratch using the FitBit app, by scrolling back through time to gather the data and assemble it in a convenient way (e.g. in a simple Google Sheet). There is nothing wrong with doing it this way; it's a lot simpler than working with the raw data you'd get if you download it. Going back day by day may also remind you of other things about specific dates -- e.g. *this was the date of my exams, so that's why my average heartrate was higher.*
+
+If you want a **lot** of very specific data, you can request a bulk download of your FitBit data by logging into the FitBit site and using Google Takeout. The result will be a (most likely) large download containing many different sub-folders with different types of data. Even though not every sub-folder will have data for you, it will have a plain-text README file that explains what the other files are, and how they're structured. The other files, if they exist, will be .csv (spreadsheet) files. You'll then need to wade through this data to find what you're looking for, and write code (or vibe-code) something to extract that data in a format that's easier for you to work with.
+
+## What can this look like?
+
+### Crochet
+- **Granny square**: Make a granny square for each week. You can potentially incorporate different granny square patterns as a way to represent something else about the week (e.g. your qualitative evaluation -- do you feel like it was a good week or a bad one?) If you're tracking two kinds of data (e.g. sleep and step count), divvy up the clusters between those two properties. (For instance, you could have an inner section represent one, and the other section represent the other; or you could split it right/left or along a diagonal. This also scales up to more than two properties.)  Use [[proportion]] (by converting the 7 values for the week into a % of the total cluster stitches) to map to the values. Map ranges of values onto different [[color|colors]]. Crochet the granny square for each week then combine them all into a blanket.
+- **Granny square variant**: If you already have made a granny square based garment (e.g. granny hexagon sweater, etc.), check and see if the final number of clusters is roughly compatible with the quantity of data you want to represent. If it's too big, you may be able to add more days' worth of data as you're working on the project; if it's too small, you can scale back the range you're trying to visualize. Map ranges to colors and stitch the garment according to your spreadsheet.
+
+### Quilting
+* **Quilt squares**: Quilt squares work similarly to granny squares. Pick one or more quilt square patterns where the number of pieces map reasonably well to a week's worth of the data you want to visualize, map ranges of values to colors, and create the squares for a quilt top.
+
+### Weaving
+* **Rigid heddle loom**: If you're visualizing two pieces of information, you can set up the warp for your rigid heddle loom with A) the most common value of each piece of information, alternating across the warp or; B) calculate out the most common value-pairs of the two pieces of information (e.g. "how often do we have the pair "1-3" vs. "1-2" vs "2-3", etc.) and use that proportion to warp your loom (e.g. "the first 20% of the warp is alternating colors 1-3".) Then weave the data as one pick for the first value, and one pick for the second value.
+* **Rigid heddle loom alternate**: You can weave the two values using [clasped wefts](https://www.youtube.com/watch?v=CGw6w4-IRak). This may leave you with different choices for what to do with the warp.

@@ -11,6 +11,8 @@ tags:
 	* Covers pin loom weaving, death record data, crafting and mental health.
 * Cordell, Ryan. "[Anemoia, AI, and Skeuomorphism: The Material Turn in Digital Humanities](https://ryancordell.org/research/anemoia)". April 7, 2026.
 	* A write-up of a talk theorizing the turn towards physical making in digital humanities, including #DHmakes and data visualization with textiles.
+* Cunliffe, Jordan. *Record, Map & Capture in Textile Art: Data Visualization in Cloth and Stitch*. London: Batsford. 2022.
+	* A book on data visualization with textiles, including some practical recommendations and information on fabric choices, and many full-color images of examples.
 * Dombrowski, Quinn. "[Textile Makerspace: Digital Humanities Meets Craft](https://www.tandfonline.com/eprint/IBKRBZX3Y72HDVT88QD9/full?target=10.1080/17496772.2024.2378629)". _Journal of Modern Craft_, July 2024, issue 17.2.
 	* About the origin of the Textile Makerspace and the *Data Visualization with Textiles* class.
 * Dombrowski, Quinn. "[Knot Hard: Accessible Textile Data Visualization with a Circular Knitting Machine](https://dhandlib.org/knot-hard-accessible-textile-data-visualization-with-a-circular-knitting-machine/)". *DH + Lib* 2024 special issue.

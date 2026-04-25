@@ -1,7 +1,7 @@
 import { QuartzEmitterPlugin } from "../types"
 import { i18n } from "../../i18n"
 import { unescapeHTML } from "../../util/escape"
-import { FullSlug, getFileExtension, isAbsoluteURL } from "../../util/path"
+import { FullSlug, isAbsoluteURL } from "../../util/path"
 import path from "path"
 import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "../../util/og"
 import sharp from "sharp"
@@ -260,6 +260,8 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
           (pageData) => {
             const isRealFile = pageData.filePath !== undefined
             let userDefinedOgImagePath = pageData.frontmatter?.socialImage
+            const socialImageWidth = pageData.frontmatter?.socialImageWidth
+            const socialImageHeight = pageData.frontmatter?.socialImageHeight
 
             if (userDefinedOgImagePath) {
               userDefinedOgImagePath = isAbsoluteURL(userDefinedOgImagePath)
@@ -281,6 +283,15 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
                     <meta property="og:image:height" content={fullOptions.height.toString()} />
                   </>
                 )}
+
+                {userDefinedOgImagePath &&
+                  typeof socialImageWidth === "number" &&
+                  typeof socialImageHeight === "number" && (
+                    <>
+                      <meta property="og:image:width" content={socialImageWidth.toString()} />
+                      <meta property="og:image:height" content={socialImageHeight.toString()} />
+                    </>
+                  )}
 
                 <meta property="og:image" content={ogImagePath} />
                 <meta property="og:image:url" content={ogImagePath} />
