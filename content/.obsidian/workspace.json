@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data/index.md",
+                "file": "Bibliography.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Bibliography"
             }
           }
         ]
@@ -183,8 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "6ddf103e59e0330c",
+  "active": "24c055f45c1d1ca5",
   "lastOpenFiles": [
+    "Data/index.md",
     "Properties/index.md",
     "Properties/Properties.md",
     "Properties",

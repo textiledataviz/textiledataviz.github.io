@@ -17,6 +17,7 @@ tags:
 	* About the origin of the Textile Makerspace and the *Data Visualization with Textiles* class.
 * Dombrowski, Quinn. "[Knot Hard: Accessible Textile Data Visualization with a Circular Knitting Machine](https://dhandlib.org/knot-hard-accessible-textile-data-visualization-with-a-circular-knitting-machine/)". *DH + Lib* 2024 special issue.
 	* Several examples of using the [[Circular knitting machine]] as a simple tool for data visualization with textiles.
+* Forget, Ellen. "# [Tactile Pie Charts for Print Material Accessibility Data](https://dhandlib.org/tactile-pie-charts-for-print-material-accessibility-data/ "Tactile Pie Charts for Print Material Accessibility Data")". *DH + Lib* 2025 special issue.
 * Mabuchi, Hideo. "[Weaving as Coding: Complexity and Nostalgia](https://dhandlib.org/weaving-as-coding-complexity-and-nostalgia/)".  *DH + Lib* 2024 special issue. 
 	* Discusses weaving as a method for conveying complexity.
 * Smith, Nancy. "[Emotional Bookmarks: Data Physicalization and the Language of Literature](https://dhandlib.org/emotional-bookmarks-data-physicalization-and-the-language-of-literature/)".  *DH + Lib* 2024 special issue.
