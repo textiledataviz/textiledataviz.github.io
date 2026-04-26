@@ -17,12 +17,15 @@ tags:
 	* About the origin of the Textile Makerspace and the *Data Visualization with Textiles* class.
 * Dombrowski, Quinn. "[Knot Hard: Accessible Textile Data Visualization with a Circular Knitting Machine](https://dhandlib.org/knot-hard-accessible-textile-data-visualization-with-a-circular-knitting-machine/)". *DH + Lib* 2024 special issue.
 	* Several examples of using the [[Circular knitting machine]] as a simple tool for data visualization with textiles.
+* Harlizius-Klück, Ellen. "[Weaving as Binary Art and the Algebra of Patterns](https://doi.org/10.1080/14759756.2017.1298239)". TEXTILE, 15(2). 2017.
 * Mabuchi, Hideo. "[Weaving as Coding: Complexity and Nostalgia](https://dhandlib.org/weaving-as-coding-complexity-and-nostalgia/)".  *DH + Lib* 2024 special issue. 
 	* Discusses weaving as a method for conveying complexity.
+* Morabito, john Paul. "[Weaving Beyond the Binary](https://doi.org/10.1080/14759756.2022.2046365)". TEXTILE, 20(4), 2022.
 * Smith, Nancy. "[Emotional Bookmarks: Data Physicalization and the Language of Literature](https://dhandlib.org/emotional-bookmarks-data-physicalization-and-the-language-of-literature/)".  *DH + Lib* 2024 special issue.
 	* Tutorial for doing a tapestry weaving of a bookmark.
 * Visconti, Amanda, Quinn Dombrowski, and Claudia Berger. "[DHMakes: Baking Craft into DH Discourse](https://doi.org/10.23287/KJDH.2024.1.1.5). _Korean Association of Digital Humanities_, vol. 1, issue 1. May 31, 2024. 
 	* About the origin and development of the community around the \#DHmakes hashtag on Twitter and Bluesky.
+* Webber-Bey, Deimosa. "[Runaway Quilt Project: Digital Humanities Exploration of Quilting During the Era of Slavery](https://cuny.manifoldapp.org/read/runaway-quilt-project-digital-humanities-exploration-of-quilting-during-the-era-of-slavery-0f3051c0-9511-4642-9c91-9f47ad761442/section/f7beacd0-44e9-4c22-be61-8c2d5c0e01a0)". Journal of Interactive Technology and Pedagogy, vol. 6. 2014.
 
 ## Tutorials & lessons
 
