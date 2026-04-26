@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Textile Properties.md",
+                "file": "Data/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Textile Properties"
+              "title": "index"
             }
           }
         ]
@@ -183,10 +183,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "24c055f45c1d1ca5",
+  "active": "6ddf103e59e0330c",
   "lastOpenFiles": [
-    "Bibliography.md",
+    "Properties/index.md",
+    "Properties/Properties.md",
+    "Properties",
+    "properties",
+    "Properties.md",
     "Textile Properties.md",
+    "Bibliography.md",
     "index.md",
     "Data/Created Data/Personal Data/Fitbit Data.md",
     "tags/fiber.md",
