@@ -17,7 +17,7 @@ Not every textile data visualization project has to spiral off into the thousand
 
 Do you have data you want to work with already? If not, explore different options for [[Acquired Data]]  and [[Created Data]]. 
 
-Once you have your data, you can start thinking about what part(s) of the data you want the textile to capture, and then how to map that onto different textile [[properties]].
+Once you have your data, you can start thinking about what part(s) of the data you want the textile to capture, and then how to map that onto different textile [[Textile Properties]].
 
 
 ## Readings

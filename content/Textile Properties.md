@@ -1,10 +1,9 @@
 ---
-title: Properties
+title: Textile Properties
 draft: false
 tags:
   -
 ---
-
 To translate [[Data/index|data]] into [[Textiles/index|textiles]], you select different properties of the textile as elements that will convey meaning, and map those properties to the data you want to represent. Not all properties of the textile you create will convey meaning; you need to deliberately choose one or more properties that will represent some part of the data, and come up with a guide for how you want to use it.
 
 * [[beading]]: adding beads to a textile to represent data; often combined with other properties (e.g. beads of different colors, with different spacing, in different quantities)
