@@ -1,5 +1,5 @@
 ---
-title: 'Textile Properties'
+title: 'Properties'
 draft: false
 ---
 To translate [[Data/index|data]] into [[Textiles/index|textiles]], you select different properties of the textile as elements that will convey meaning, and map those properties to the data you want to represent. Not all properties of the textile you create will convey meaning; you need to deliberately choose one or more properties that will represent some part of the data, and come up with a guide for how you want to use it.

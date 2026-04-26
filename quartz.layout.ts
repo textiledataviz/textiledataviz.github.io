@@ -6,7 +6,8 @@ const explorerSortFn = (a: FileTrieNode, b: FileTrieNode) => {
   const folderOrder: Record<string, number> = {
     Textiles: 0,
     Data: 1,
-    Examples: 2,
+    TextileProperties: 2,
+    Examples: 3,
   }
 
   // Keep folders before files, then apply custom folder ordering.
