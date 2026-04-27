@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data/Created Data/Personal Data/Fitbit Data.md",
+                "file": "Bibliography.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fitbit Data"
+              "title": "Bibliography"
             }
           }
         ]
@@ -174,7 +174,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -186,7 +185,21 @@
   },
   "active": "24c055f45c1d1ca5",
   "lastOpenFiles": [
+    "TextileProperties/index.md",
+    "TextileProperties",
+    "Data/index.md",
+    "Properties/index.md",
+    "Properties/Properties.md",
+    "Properties",
+    "properties",
+    "Properties.md",
+    "Textile Properties.md",
     "Bibliography.md",
-    "Data/Created Data/Personal Data/Fitbit Data.md"
+    "index.md",
+    "Data/Created Data/Personal Data/Fitbit Data.md",
+    "tags/fiber.md",
+    "tags/organization copy.md",
+    "tags/negative-space.md",
+    "tags/beading.md"
   ]
 }

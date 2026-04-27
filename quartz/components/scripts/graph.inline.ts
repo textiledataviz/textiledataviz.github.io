@@ -415,7 +415,9 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         }
       })
 
-    if (isTagNode) {
+    if (nodeId === slug) {
+      gfx.stroke({ width: 3, color: computedStyleMap["--secondary"] })
+    } else if (isTagNode) {
       gfx.stroke({ width: 2, color: computedStyleMap["--tertiary"] })
     }
 
