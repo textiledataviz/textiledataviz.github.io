@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bibliography.md",
+                "file": "Examples/2024 Book Tracker with Star Ratings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bibliography"
+              "title": "2024 Book Tracker with Star Ratings"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -174,6 +176,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -185,21 +188,17 @@
   },
   "active": "24c055f45c1d1ca5",
   "lastOpenFiles": [
+    "Data/Created Data/Personal Data/Interactions.md",
+    "Data/Created Data/Personal Data/Reading Logs.md",
+    "Data/Acquired Data/Fitbit Data copy.md",
+    "tags/fiber.md",
+    "tags/beading.md",
     "TextileProperties/index.md",
     "TextileProperties",
-    "Data/index.md",
-    "Properties/index.md",
-    "Properties/Properties.md",
-    "Properties",
-    "properties",
-    "Properties.md",
-    "Textile Properties.md",
-    "Bibliography.md",
-    "index.md",
+    "Data/Acquired Data/Fitbit Data.md",
     "Data/Created Data/Personal Data/Fitbit Data.md",
-    "tags/fiber.md",
-    "tags/organization copy.md",
-    "tags/negative-space.md",
-    "tags/beading.md"
+    "Data/Created Data/Personal Data/Feelings.md",
+    "Data/Created Data/Personal Data/Clothes.md",
+    "Bibliography.md"
   ]
 }
